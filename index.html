@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visiting Card</title>
+<style>
+    body {
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .card {
+        width: 350px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-header {
+        background: linear-gradient(135deg, #003366, #0066cc);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card-header h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .card-header p {
+        margin: 5px 0 0;
+        font-size: 14px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .info {
+        margin: 8px 0;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    .info span {
+        margin-left: 10px;
+    }
+
+    .info i {
+        color: #003366;
+    }
+</style>
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="card">
+    <div class="card-header">
+        <h1>John Doe</h1>
+        <p>Senior Software Engineer</p>
+    </div>
+    <div class="card-body">
+        <div class="info"><i class="fas fa-building"></i><span>Global Tech Solutions</span></div>
+        <div class="info"><i class="fas fa-phone"></i><span>+1 234 567 890</span></div>
+        <div class="info"><i class="fas fa-envelope"></i><span>john.doe@globaltech.com</span></div>
+        <div class="info"><i class="fas fa-globe"></i><span>www.globaltech.com</span></div>
+        <div class="info"><i class="fas fa-map-marker-alt"></i><span>123 Corporate Ave, NY, USA</span></div>
+    </div>
+</div>
+
+</body>
+</html>
